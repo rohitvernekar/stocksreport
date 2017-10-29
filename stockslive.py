@@ -9,6 +9,9 @@ class StockReader(object):
         self.stock_details = csv_to_dict()
 
     def get_stock_quote(self, stock_code):
+        """
+        This gives all the details of the stock
+        """
     	return self.nse.get_quote(stock_code)
 
 
